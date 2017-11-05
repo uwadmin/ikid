@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Good-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="HappyViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7V-Z1-hbb">
+                                <rect key="frame" x="318" y="570" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNextPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="50Z-A5-FBf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZG-Ee-Kgf">
+                                <rect key="frame" x="0.0" y="99" width="375" height="469"/>
+                                <state key="normal" title="Start" image="Good1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnFlip:" destination="9pv-A4-QxB" eventType="touchUpInside" id="50a-T4-MKJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="A7V-Z1-hbb" secondAttribute="trailing" constant="16" id="4HO-ZV-u3I"/>
+                            <constraint firstItem="JZG-Ee-Kgf" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="Fai-GT-eMa"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="A7V-Z1-hbb" secondAttribute="bottom" constant="12" id="O32-eE-gqI"/>
+                            <constraint firstItem="JZG-Ee-Kgf" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="Vw1-Id-hLL"/>
+                            <constraint firstItem="JZG-Ee-Kgf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PQr-Ze-W5v" secondAttribute="top" id="dpD-VG-Kge"/>
+                            <constraint firstItem="JZG-Ee-Kgf" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="oyM-nB-GBI"/>
+                            <constraint firstItem="A7V-Z1-hbb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JZG-Ee-Kgf" secondAttribute="bottom" constant="2" id="sR1-tW-0aI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Good" image="happy" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="btnGood" destination="JZG-Ee-Kgf" id="Zkv-5H-r7F"/>
+                        <outlet property="btnNext" destination="A7V-Z1-hbb" id="Fjd-TQ-B56"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-366.56671664167919"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="LoX-fW-WNb">
+            <objects>
+                <viewController id="uzU-n1-SOA" customClass="RolfViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="imG-w2-baX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpb-vx-fij">
+                                <rect key="frame" x="318" y="570" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNextPressed:" destination="uzU-n1-SOA" eventType="touchUpInside" id="sn0-8q-5EJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7M-Jt-v1l">
+                                <rect key="frame" x="37.5" y="183" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Z7M-Jt-v1l" secondAttribute="height" multiplier="1:1" id="7hg-cP-Nhe"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Dad1"/>
+                                <connections>
+                                    <action selector="btnFlip:" destination="uzU-n1-SOA" eventType="touchUpInside" id="Z3R-7O-SLZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Z7M-Jt-v1l" firstAttribute="centerY" secondItem="imG-w2-baX" secondAttribute="centerY" id="Awj-2e-lBY"/>
+                            <constraint firstItem="Z7M-Jt-v1l" firstAttribute="centerX" secondItem="imG-w2-baX" secondAttribute="centerX" id="UdX-4z-dHf"/>
+                            <constraint firstItem="HQk-u2-Ifv" firstAttribute="trailing" secondItem="lpb-vx-fij" secondAttribute="trailing" constant="16" id="ZFS-xf-F0O"/>
+                            <constraint firstItem="HQk-u2-Ifv" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Z7M-Jt-v1l" secondAttribute="bottom" constant="20" id="nWw-Jd-jv8"/>
+                            <constraint firstItem="HQk-u2-Ifv" firstAttribute="bottom" secondItem="lpb-vx-fij" secondAttribute="bottom" constant="12" id="vwZ-IO-YfD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HQk-u2-Ifv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" image="rofl" id="QI6-zF-sgm"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btnDad" destination="Z7M-Jt-v1l" id="IwV-OL-xkp"/>
+                        <outlet property="btnNext" destination="lpb-vx-fij" id="2ns-p7-wzC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpv-Nj-hQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405.5999999999999" y="-0.44977511244377816"/>
+        </scene>
+        <!--Pun-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="LaughViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmd-Re-wLc">
+                                <rect key="frame" x="318" y="570" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNextPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="5u3-KU-HZF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operator: 911, What's your emergency?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EM-G0-0oC">
+                                <rect key="frame" x="16" y="298" width="343" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5EM-G0-0oC" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="16" id="1A7-Xr-e8q"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Hmd-Re-wLc" secondAttribute="trailing" constant="16" id="G0f-Qs-Dgs"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="5EM-G0-0oC" secondAttribute="trailing" constant="16" id="dAU-X4-mdy"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="Hmd-Re-wLc" secondAttribute="bottom" constant="12" id="eQl-sc-JdM"/>
+                            <constraint firstItem="5EM-G0-0oC" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="rpv-La-jrT"/>
+                            <constraint firstItem="5EM-G0-0oC" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="yJI-M8-rTj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" image="laugh" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="btnNext" destination="Hmd-Re-wLc" id="Ia7-jH-Kby"/>
+                        <outlet property="label" destination="5EM-G0-0oC" id="xnA-A1-tHS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="393.55322338830587"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="uzU-n1-SOA" kind="relationship" relationship="viewControllers" id="Wy5-LY-A5o"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dad1" width="300" height="300"/>
+        <image name="Good1" width="739" height="469"/>
+        <image name="happy" width="25" height="25"/>
+        <image name="laugh" width="25" height="25"/>
+        <image name="rofl" width="25" height="25"/>
+    </resources>
+</document>

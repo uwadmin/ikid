@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZG-Ee-Kgf">
-                                <rect key="frame" x="0.0" y="99" width="375" height="469"/>
+                                <rect key="frame" x="0.0" y="129.5" width="375" height="408"/>
                                 <state key="normal" title="Start" image="Good1"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
@@ -140,7 +140,6 @@
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="5EM-G0-0oC" secondAttribute="trailing" constant="16" id="dAU-X4-mdy"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="Hmd-Re-wLc" secondAttribute="bottom" constant="12" id="eQl-sc-JdM"/>
                             <constraint firstItem="5EM-G0-0oC" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="rpv-La-jrT"/>
-                            <constraint firstItem="5EM-G0-0oC" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="yJI-M8-rTj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
@@ -176,7 +175,7 @@
     </scenes>
     <resources>
         <image name="Dad1" width="300" height="300"/>
-        <image name="Good1" width="739" height="469"/>
+        <image name="Good1" width="712" height="408"/>
         <image name="happy" width="25" height="25"/>
         <image name="laugh" width="25" height="25"/>
         <image name="rofl" width="25" height="25"/>
